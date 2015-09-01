@@ -1,0 +1,15 @@
+h4 {
+  margin: 40px 0 10px;
+}
+.nav-tabs {
+  margin-bottom: 15px;
+}
+#out {
+	padding: 5px;
+}
+#out div.active {
+	display: block;
+}
+#out>div {
+	display: none;
+}

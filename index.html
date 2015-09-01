@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/undescore-min.js"></script>
+    <script src="js/backbone.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Tabs</title>
+</head>
+<body>
+	<div id="out"></div>
+	<script type="text/template" id="tabsTemplate">
+		<ul class="nav nav-tabs">
+			<% _.each(tabs, function(tab) {
+				%> <li>
+						<a href="#<%=tab.id %>" ><%=tab.caption %></a>
+					</li> <% 
+			}); %>
+		</ul>
+		<% _.each(tabs, function(tab) {
+			%> <div id="<%=tab.id %>">
+					<%-tab.content %>
+				</div>
+			 <% 
+		}); %>
+	</script>
+</body>
+</html>
