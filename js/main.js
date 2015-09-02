@@ -60,11 +60,11 @@ $(function() {
 			$('#' + id + '').addClass('active');
 		},
 		default: function(tab) {
-			var $tab = "#" + tab;
+			var hashtag = "#" + tab;
 			var tab = tab.charAt(0).toUpperCase() + tab.slice(1);
 			$('#out div').removeClass('active');
 			
-			$('' + $tab + '').addClass('active');
+			$(hashtag).addClass('active');
 			$('.nav li').removeClass('active');
 			$('.nav li a').filter(function() {
 								return $(this).text() === tab;
